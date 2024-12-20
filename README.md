@@ -1,14 +1,19 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
+# MovieBrowse - KMP
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+## Description
+A KMP application for browsing a list of films, that are popular right now.
+![main_screen_mobile](./images/main_screen_mobile.png)
+![detais_screen_mobile](./images/detail_screen_mobile.png)
+![main_screen_desktop](./images/main_screen_desktop.png)
+![detais_screen_desktop](./images/detail_screen_desktop.png)
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Targets
+* **Android**
+* **IOS**
+* **Desktop**
 
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Libraries
+* **Ktor-client** - sending requests to API
+* **Coil** - showing an image based on the model's URL
+* **Navigation-Compose** - changing components based on the current route
+* **Koin** - dependency injection
